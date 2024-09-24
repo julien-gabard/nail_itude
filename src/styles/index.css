@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway'), url("../assets/fonts/Raleway.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Meriendia';
+  src: local('Merienda'), url("../assets/fonts/Merienda.ttf") format('truetype');
+}
+
+:root {
+  font-family: 'Raleway', system-ui, sans-serif;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  /* dvw = dynamical viewport width */
+  width: 100dvw;
+  /* dvh = dynamical viewport height */
+  height: 100dvh;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
