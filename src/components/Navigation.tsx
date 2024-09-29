@@ -2,6 +2,7 @@ import { useCallback, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 
 import * as S from 'styles/components/Navigation'
+import Typography from 'components/ui/Typography'
 import links from 'config/links'
 
 const Navigation = () => {
@@ -22,7 +23,7 @@ const Navigation = () => {
                     id={link.id}
                     onMouseEnter={() => handleMouseEnter(link.path)}
                 >
-                    <span>{link.labelName}</span>
+                    <Typography variant='span'>{link.labelName}</Typography>
                     {link.path === pathname && (
                         <S.WrapBorderLink
                             layoutId='wrap-border-link'

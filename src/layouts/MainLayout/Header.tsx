@@ -8,6 +8,7 @@ import { LayoutContext } from 'contexts/LayoutContext'
 import Navigation from 'components/Navigation'
 import SideDrawer from 'components/SideDrawer'
 import SwitchTheme from 'components/SwitchTheme'
+import Typography from 'components/ui/Typography'
 import useMediaQuery from 'hooks/useMediaQuery'
 
 const Header = () => {
@@ -20,7 +21,7 @@ const Header = () => {
         <>
             <S.Container $isBelowMd={isBelowMd}>
                 <S.Title to='/'>
-                    <span>Nail&apos;itude</span>
+                    <Typography variant='h5'>Nail&apos;itude</Typography>
                 </S.Title>
                 {isBelowMd ? (
                     <>

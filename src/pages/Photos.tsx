@@ -6,7 +6,6 @@ import AnimatedPageWrapper from 'components/AnimatedPageWrapper'
 import Error from 'pages/Error'
 import Gallery from 'components/Gallery'
 import Loading from 'components/Loading'
-import Ribbon from 'components/ui/Ribbon'
 
 const Photos = () => {
     const [data] = useState(useLoaderData() as Record<string, string>)
@@ -14,9 +13,7 @@ const Photos = () => {
     return (
         <AnimatedPageWrapper>
             {/* TITLE PAGE */}
-            <Ribbon>
-                <S.Title>Mes photos</S.Title>
-            </Ribbon>
+            <S.Title variant='h1'>Mes photos</S.Title>
 
             {/* GRID VIEW AND CAROUSEL VIEW */}
             {/*

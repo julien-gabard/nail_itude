@@ -19,6 +19,48 @@ declare module 'styled-components' {
             down: (device: TDevice) => string
             between: (minDevice: TDevice, maxDevice: TDevice) => string
         }
+        typography: {
+            h1: {
+                fontFamily: string
+                fontSize: string
+                fontWeight: string | number
+            }
+            h2: {
+                fontFamily: string
+                fontSize: string
+                fontWeight: string | number
+            }
+            h3: {
+                fontFamily: string
+                fontSize: string
+                fontWeight: string | number
+            }
+            h4: {
+                fontFamily: string
+                fontSize: string
+                fontWeight: string | number
+            }
+            h5: {
+                fontFamily: string
+                fontSize: string
+                fontWeight: string | number
+            }
+            h6: {
+                fontFamily: string
+                fontSize: string
+                fontWeight: string | number
+            }
+            p: {
+                fontFamily: string
+                fontSize: string
+                fontWeight: string | number
+            }
+            span: {
+                fontFamily: string
+                fontSize: string
+                fontWeight: string | number
+            }
+        }
         colors: {
             main: string
             secondary: string
@@ -63,6 +105,48 @@ export const globalValues = {
         },
         between: function (minDevice: TDevice, maxDevice: TDevice) {
             return `only screen and (min-width: ${this.values[minDevice]}${this.unit}) and (max-width: ${this.values[maxDevice]}${this.unit})`
+        },
+    },
+    typography: {
+        h1: {
+            fontFamily: 'Meriendia, system-ui, sans-serif',
+            fontSize: '6rem',
+            fontWeight: 300,
+        },
+        h2: {
+            fontFamily: 'Meriendia, system-ui, sans-serif',
+            fontSize: '3.75rem',
+            fontWeight: 300,
+        },
+        h3: {
+            fontFamily: 'Meriendia, system-ui, sans-serif',
+            fontSize: '3rem',
+            fontWeight: 400,
+        },
+        h4: {
+            fontFamily: 'Meriendia, system-ui, sans-serif',
+            fontSize: '2.125rem',
+            fontWeight: 400,
+        },
+        h5: {
+            fontFamily: 'Meriendia, system-ui, sans-serif',
+            fontSize: '1.5rem',
+            fontWeight: 400,
+        },
+        h6: {
+            fontFamily: 'Meriendia, system-ui, sans-serif',
+            fontSize: '1.25rem',
+            fontWeight: 500,
+        },
+        p: {
+            fontFamily: 'Raleway, system-ui, sans-serif',
+            fontSize: '1rem',
+            fontWeight: 400,
+        },
+        span: {
+            fontFamily: 'Raleway, system-ui, sans-serif',
+            fontSize: '1rem',
+            fontWeight: 400,
         },
     },
     maxWidth: '1440px',

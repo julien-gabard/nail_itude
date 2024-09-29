@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
-export const Title = styled.h1`
+import Typography from 'components/ui/Typography'
+
+export const Title = styled(Typography)`
     text-align: center;
-    font-family: Meriendia, system-ui, sans-serif;
 `

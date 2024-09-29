@@ -34,8 +34,6 @@ export const Container = styled.header<IContainerProps>`
 
 export const Title = styled(NavLink)`
     color: inherit;
-    font-family: 'Meriendia', system-ui, sans-serif;
-    font-size: 1.5em;
     text-decoration: none;
     display: inline-flex;
     align-items: center;

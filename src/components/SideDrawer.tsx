@@ -6,6 +6,7 @@ import Icons from 'components/ui/Icons'
 import { LayoutContext } from 'contexts/LayoutContext'
 import LogoFull from 'components/ui/LogoFull'
 import SwitchTheme from 'components/SwitchTheme'
+import Typography from 'components/ui/Typography'
 import { animatedSideDrawer } from 'config/animated'
 import links from 'config/links'
 import useMediaQuery from 'hooks/useMediaQuery'
@@ -39,7 +40,9 @@ const SideDrawer = () => {
                                         iconName={link.iconName}
                                         size='24px'
                                     />
-                                    <span>{link.labelName}</span>
+                                    <Typography variant='span'>
+                                        {link.labelName}
+                                    </Typography>
                                 </S.Link>
                             </motion.div>
                         ))}
@@ -47,7 +50,9 @@ const SideDrawer = () => {
                     <LogoFull />
                     <SwitchTheme size='large' />
                     <S.Footer>
-                        © Copyright 2024 GID, Inc. All rights reserved.
+                        <Typography variant='p'>
+                            © Copyright 2024 GID, Inc. All rights reserved.
+                        </Typography>
                     </S.Footer>
                 </S.Container>
             )}

@@ -1,16 +1,14 @@
 import * as S from 'styles/pages/Prices'
 import AnimatedPageWrapper from 'components/AnimatedPageWrapper'
-import Ribbon from 'components/ui/Ribbon'
+import Typography from 'components/ui/Typography'
 
 const Prices = () => {
     console.log('toto Service')
 
     return (
         <AnimatedPageWrapper>
-            <Ribbon>
-                <S.Title>Mes tarifs</S.Title>
-            </Ribbon>
-            <p>En construction</p>
+            <S.Title variant='h1'>Mes tarifs</S.Title>
+            <Typography variant='p'>En construction</Typography>
         </AnimatedPageWrapper>
     )
 }
