@@ -2,10 +2,10 @@ import { ChangeEvent, FormEvent, useCallback, useState } from 'react'
 
 import * as S from 'styles/pages/Contact'
 import AnimatedPageWrapper from 'components/AnimatedPageWrapper'
+import Icons from 'components/ui/Icons'
 import Input from 'components/ui/Input'
 import Ribbon from 'components/ui/Ribbon'
 import Textarea from 'components/ui/Textarea'
-import Icons from '../components/ui/Icons'
 
 const Contact = () => {
     const [inputsValue, setInputValue] = useState<{
