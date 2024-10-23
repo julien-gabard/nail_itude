@@ -11,12 +11,5 @@ export const DynamicTypography = styled(
     ({ variant, children, className }: IDynamicTypographyProps) =>
         createElement(variant, { className }, children),
 )(({ theme, variant }) => ({
-    fontFamily: theme.typography[variant].fontFamily,
-    fontSize: theme.typography[variant].fontSize,
-    fontWeight: theme.typography[variant].fontWeight,
-
-    [`@media ${theme.breakpoints.down('lg')}`]: {},
-    [`@media ${theme.breakpoints.down('md')}`]: {},
-    [`@media ${theme.breakpoints.down('sm')}`]: {},
-    [`@media ${theme.breakpoints.down('xs')}`]: {},
+    ...theme.typography[variant],
 }))

@@ -20,6 +20,7 @@ declare module 'styled-components' {
             between: (minDevice: TDevice, maxDevice: TDevice) => string
         }
         typography: {
+            htmlFontSize: string
             h1: {
                 fontFamily: string
                 fontSize: string
@@ -108,43 +109,86 @@ export const globalValues = {
         },
     },
     typography: {
+        htmlFontSize: '16px',
         h1: {
-            fontFamily: 'Meriendia, system-ui, sans-serif',
+            fontFamily: 'Inter, system-ui, sans-serif',
             fontSize: '6rem',
             fontWeight: 300,
+            '@media (max-width: 1024px)': {
+                fontSize: '5.4rem',
+            },
+            '@media (max-width: 768px)': {
+                fontSize: '4.7rem',
+            },
+            '@media (max-width: 425px)': {
+                fontSize: '3.5rem',
+            },
         },
         h2: {
-            fontFamily: 'Meriendia, system-ui, sans-serif',
+            fontFamily: 'Inter, system-ui, sans-serif',
             fontSize: '3.75rem',
             fontWeight: 300,
+            '@media (max-width: 1024px)': {
+                fontSize: '3.3rem',
+            },
+            '@media (max-width: 768px)': {
+                fontSize: '3.125rem',
+            },
+            '@media (max-width: 425px)': {
+                fontSize: '2.4rem',
+            },
         },
         h3: {
-            fontFamily: 'Meriendia, system-ui, sans-serif',
+            fontFamily: 'Inter, system-ui, sans-serif',
             fontSize: '3rem',
             fontWeight: 400,
+            '@media (max-width: 1024px)': {
+                fontSize: '2.8rem',
+            },
+            '@media (max-width: 768px)': {
+                fontSize: '2.6rem',
+            },
+            '@media (max-width: 425px)': {
+                fontSize: '2rem',
+            },
         },
         h4: {
-            fontFamily: 'Meriendia, system-ui, sans-serif',
-            fontSize: '2.125rem',
+            fontFamily: 'Inter, system-ui, sans-serif',
+            fontSize: '2rem',
             fontWeight: 400,
+            '@media (max-width: 768px)': {
+                fontSize: '1.8rem',
+            },
+            '@media (max-width: 425px)': {
+                fontSize: '1.6rem',
+            },
         },
         h5: {
-            fontFamily: 'Meriendia, system-ui, sans-serif',
+            fontFamily: 'Inter, system-ui, sans-serif',
             fontSize: '1.5rem',
             fontWeight: 400,
+            '@media (max-width: 768px)': {
+                fontSize: '1.3rem',
+            },
+            '@media (max-width: 425px)': {
+                fontSize: '1.25rem',
+            },
         },
         h6: {
-            fontFamily: 'Meriendia, system-ui, sans-serif',
+            fontFamily: 'Inter, system-ui, sans-serif',
             fontSize: '1.25rem',
             fontWeight: 500,
+            '@media (max-width: 425px)': {
+                fontSize: '1.125rem',
+            },
         },
         p: {
-            fontFamily: 'Raleway, system-ui, sans-serif',
+            fontFamily: 'Inter, system-ui, sans-serif',
             fontSize: '1rem',
             fontWeight: 400,
         },
         span: {
-            fontFamily: 'Raleway, system-ui, sans-serif',
+            fontFamily: 'Inter, system-ui, sans-serif',
             fontSize: '1rem',
             fontWeight: 400,
         },
